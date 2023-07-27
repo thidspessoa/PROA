@@ -1,0 +1,254 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+
+
+/* Configuração padraão
+----------------------------------*/
+
+body, html, article {
+    margin: 0;
+    font: 16px "Lato", sans-serif;
+    color: #777;
+    height: 100%;
+    /* Esse é o truque do parallax, definimos que irá preencher
+    a altura total do corpo e do arquivo, que é 92% da tela do
+    navegador. Pois no caso da imagem, queremos que ela apareça
+    sempre preenchendo toda a tela do navegador, que é area do corpo
+    do site. Por isso precisamos definir que o body exapanda a 92%
+    da tela do usuario.*/
+}
+
+
+.conteudo {
+    color: #777;
+    
+    text-align: center;
+    /* Alinha cada linha para que elas tenham
+    exatamente a mesma largura, exceto a ultima. */
+    padding: 50px 80px;
+}
+
+
+h3 {
+   text-transform: uppercase;
+   color: #111;
+   text-align: center; 
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+
+/* Efeito Parallax
+----------------------------------*/
+
+.caixa1, .caixa2, .caixa3, .caixa4, .caixa5 {
+    position: relative;
+    background-color: rgb(0, 0, 0, 0.9);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 5;
+}
+
+.caixa1 {
+    background-image: url(../assets/b2.jpg)
+}
+
+.caixa2 {
+    background-image: url(../Assets/Colossalzinho.jpg);
+}
+
+.caixa3 {
+    background-image: url(../Assets/tlz.jpg);
+}
+
+.caixa4 {
+    background-image: url(../Assets/codding.jpg);
+}
+
+.caixa5 {
+    background-image: url(../assets/BDNC.jpg) ;
+}
+
+.conteudoTitulo {
+    position: absolute;
+    left: 0%;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    /* O que fizemos aqui foi definir uma nova div para separar
+    as formatações de texto das de background deste bloco de codigos.
+    E dentro dessa nova div criamos um span, para desse modo conseguir
+    centralizar o conteudo de maneira mais facil, pois aplicamos 
+    no bloco de codigos CSS abaixo um text aling, alinhando o span
+    ao centro da div nova, que definimos aqui em cima que ocuparia
+    100% da div principal caixa1. Teria dado certo também utilizar
+    uma div mas ai teriamos que alterar o display dela, pois o span
+    é por padrão um elemento inline, e como queriamos que a caixa
+    ocupasse apenas o espaço que definimos, foi melhor utilizar o 
+    span.*/
+}
+
+
+.conteudoTitulo button.titulo1 {
+    /* Para alinhar o conteudo no centro da nossa div,
+    pois se o conteudo fosse maior, ficaria descentralizado devido
+    ao fato de que alinhamos apenas a lateral esquerda do conteudo.*/
+    background-color: #e60023;
+    color: #fff;
+    padding: 25px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    /* Define o espaçamento entre as letras*/
+    text-transform: uppercase;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    opacity: 0.9;
+
+}
+
+
+.conteudoTitulo button.titulo2 {
+    background-color: #0081fe;
+    color: #fff;
+    padding: 25px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    opacity: 0.9;
+
+}
+
+
+.conteudoTitulo button.titulo3 {
+    background-color: #FFD400;
+    color: #fff;
+    padding: 25px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    opacity: 0.9;
+
+}
+
+
+
+.conteudoTitulo button.titulo4 {
+    background-color: #e50914;
+    color: #fff;
+    padding: 25px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    opacity: 0.9;
+
+}
+
+
+
+.conteudoTitulo button.titulo5 {
+    background-color: #F5961D;
+    color: #fff;
+    padding: 25px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    border-radius: .25rem;
+    cursor: pointer;
+    border: none;
+    opacity: 0.9;
+    transition: 0.4seg;
+
+}
+
+h1 {
+    margin-bottom: 1em;
+}
+
+#closeModal {
+    background-color: #007bff;
+    opacity: 0.9;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: .25rem;
+    border: none;
+    cursor: pointer;
+
+}
+
+.conteudoTitulo button.titulo1:hover, .conteudoTitulo button.titulo2:hover, 
+.conteudoTitulo button.titulo3:hover, .conteudoTitulo button.titulo4:hover,
+.conteudoTitulo button.titulo5:hover, #closeModal:hover {
+    opacity: 10;
+   
+}
+
+.fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+
+.modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    background-color: #ffffff;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 500px;
+    max-width: 90%;
+    padding: 1.2rem;
+    border-radius: .5rem
+    ;
+}
+    
+#modalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem ;
+    padding-bottom: 1rem;
+
+}
+
+
+#modalBody {
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hide {
+    opacity: 0;
+}
+
+
+/**************** Parallax utiliza camadas de imagens, 
+dando impressão de movimento.****************/
