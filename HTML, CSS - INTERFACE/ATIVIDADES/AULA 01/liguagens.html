@@ -2,6 +2,7 @@
 <html lang="pt-br">
     
     <head>
+
         <title> Liguagens Atividade </title>
         <meta charset="utf-8">
 
@@ -9,6 +10,7 @@
         <link rel="stylesheet" type="text/css"
         href="./styles/estilo.css">
 
+        <script src="https://kit.fontawesome.com/741a523def.js" crossorigin="anonymous"></script>
         <script src="script.js" defer></script>
 
     </head>
@@ -67,7 +69,7 @@
                    texto e do fundo, fonte e espaçamento entre parágrafos. Também pode
                    criar tabelas, usar variações de layouts, ajustar imagens para suas
                    respectivas telas e assim por diante.</p>
-        
+
             </div>
         </div> <!--Final CSS-->
 
@@ -93,6 +95,7 @@
                 foi também um dos fundadores da Mozilla Corporation.</p>
 
             </div>
+
         </div> <!--Final JAVA SCRIPT-->
 
 
@@ -152,24 +155,80 @@
             </div>
         </div> <!--Final MySQL-->
 
-        <div class="hide">
+        <div id="fade" class="hide"></div>
+        <div id="modal" class="hide">
+          <div class="modal-header">
+            <h2>Título</h2>
+            <button id="close-modal">Fechar</button>
+          </div>
+          <div class="modal-body">
+            <video  src="./assets/lgcProgramacao.mp4" controls played></video>
 
-            <section class="fade">
-            </section>
+            <audio src="./assets/videoplayback (audio-extractor.net).mp3" controls player></audio>
+
+            <div class="fontes">
+                <div class="titleFonte">
+                    <h4>Fontes:</h4>
+                </div>
+        
+                <div class="listFontes">
+
+                    <ul>
+                        <li>
+                            <a href="https://www.hostinger.com.br/tutoriais/o-que-e-html-conceitos-basicos">
+                                <i class="fa-brands fa-html5 fa-bounce fa-2xl" style="color: #e60000;"></i>
+                            </a>    
+                        </li>
     
-            <section class="modal">
-                <div id="modalHeader">
-                    <h2 class="titleText"> Titulo</h2>
-                    <button id="closeModal">Fechar Modal</button>
+                        <li>
+                            <a href="https://www.hostinger.com.br/tutoriais/o-que-e-css-guia-basico-de-css">
+                                <i class="fa-brands fa-css3-alt fa-bounce fa-2xl" style="color: #005eff;"></i>
+                            </a>    
+                            </li>
+    
+                        <li>
+                            <a href="https://www.hostinger.com.br/tutoriais/o-que-e-javascript#O_Que_e_JavaScript">
+                                <i class="fa-brands fa-square-js fa-bounce fa-2xl" style="color: #dbd40a;"></i>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="https://aws.amazon.com/pt/what-is/java/">
+                                <i class="fa-brands fa-java fa-bounce fa-2xl" style="color: #7b0909;"></i>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="https://www.techtudo.com.br/noticias/2012/04/o-que-e-e-como-usar-o-mysql.ghtml">
+                                <i class="fa-solid fa-database fa-bounce fa-2xl" style="color: #d58310;"></i>
+                            </a>
+                        </li>
+    
+                    </ul>
+    
                 </div>
+            
+                
+        
+        
 
-                <div id="modalBody">
-                    <video src="./assets/lgcProgramacao.mp4" controls played width="200px" height="200px"></video>
-                    <audio src="./assets/videoplayback (audio-extractor.net).mp3" controls player></audio>
-                </div>
-            </section>
+            </div>
+            
 
+
+          </div>
         </div>
+
+
+        <footer id="rodaPe">
+            <div id="boxFooter">
+                
+                <span>Thiago Pessoa &reg; </span>
+
+
+            </div>
+
+        </footer>
   
 
 
