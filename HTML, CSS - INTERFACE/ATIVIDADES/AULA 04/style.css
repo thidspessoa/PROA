@@ -1,0 +1,161 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/******* HEADER ************/
+
+
+#cabecalho {
+    width: 100%;
+    /**background-color: rgb(red, green, blue);**/
+    height: auto;
+    background-image: linear-gradient( to top, rgb(56, 142, 188),  rgb(53, 130, 171));
+}
+
+.tituloHeader {
+    width: 100%;
+    height: 50%;
+    /*background-color: rgb(56, 142, 188);*/
+    text-align: center;
+}
+
+.tituloHeader h1 {
+    padding: 20px;
+    font-size: 3em;
+    font-weight: 0;
+    color: #fff;
+    font-style: italic;
+}
+
+.navBar {
+    width: 100%;
+    height: 50%;
+    /*background-color: rgb(67, 167, 221);*/
+    box-shadow: 0px -5px 10px rgb(37, 95, 126);
+    border-bottom: 2px solid rgb(37, 95, 126);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 10px;
+    padding: 15px;
+    flex-wrap: nowrap;
+}
+
+.listNav li {
+    display: inline;
+}
+
+.listNav li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 16px;
+    font-weight: 550;
+    display: inline-block;
+
+    cursor: pointer;
+}
+
+.listNav li a:hover {
+    padding: 5px;
+    background-color: rgb(37, 95, 126);
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+
+/******* BODDY ************/
+
+
+#subBody {
+    width: 100%;
+    height: auto;
+    background-color:  #edededd6;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 10px;
+    padding: 15px;
+    flex-wrap: nowrap;
+
+}
+
+.container {
+    background-color: #fff;
+
+    height: 50%;
+    width: 50%;
+    padding: 10px;
+    margin: 2em 0 2em 0;
+}
+
+
+#titleBox {
+    padding: 10px;
+    
+}
+
+
+#titleBox h1 {
+    font-size: 2.5em;
+    color: #424242;
+    margin-bottom: 10px;
+}
+
+#titleBox span {
+    font-size: 1.5em;
+    color: #757575;
+    display: block;
+    margin-top: 15px;
+}
+
+.textBox {
+ 
+    margin-top: 20px;
+    height: auto;
+}
+
+.textBox p {
+    font-size: 1.4rem;
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    line-height: 1.4em;
+    font-weight: 100;
+}
+
+.imgBox {
+    width: 100%;
+    height: auto;
+
+}
+
+.imgBox img {
+    width: 100%;
+    height: auto;
+    border-radius: 1em;
+}
+
+
+/************ FOOTER ************/
+
+#boxFooter {
+    height: 50px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(37, 95, 126);
+}
+
+#boxFooter h1 {
+    color: #fff;
+    font-style: italic;
+    font-size: 1.5em;
+}

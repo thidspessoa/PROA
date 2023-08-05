@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Carrinho de Compras - Supermercado </title>
+
+    <link  rel="stylesheet" type="text/css" href="./styles/catalogo.css">
+
+    <style type="text/css">
+
+    </style>
+
+    <!--<script>
+        var cpf = document.getElementById("password");
+        var atual = document.getElementById("atual");
+
+        cpf.oninput = function(event) {
+        atual.innerHTML = cpf.value;
+        }
+    </script>-->
+
+    <script>
+        mostrarBloco = () => {
+            let a = document.querySelector('.addSecond').style;
+            a.display = 'block';
+            }
+    </script>
+
+
+</head>
+
+
+<body class="supermercado">
+
+    <header class="headContainer">
+
+            <div class="logoHead">
+                <!--<i class="fa-solid fa-house fa-2xl" style="color: #ffffff;"></i>-->
+                <img src="../ATV/assets/botao-home.png" width="50px">
+            </div>
+
+
+            <!--Inicio toop-->
+            <nav id="topo">
+                <h1 class="logo">Carrinho de compras</h1>
+
+                <div id="navBar">
+                    <ul id="listNav">
+                        <li class="delivery"><a href="index.html">Pratos</a></li>
+                        <li class="super"><a  id="#" href="supermercado.html">Supermercado</a></li>
+                        <li><a  id="#" href="#">Marcenaria</a></li>
+                        <li><a  id="#" href="#">Técnologia</a></li>
+                    </ul>
+                </div>
+            </nav> <!--Fim /topo-->
+
+            <div class="login">
+                <h1>Login</h1>
+            </div>
+    </header>
+
+    <section id="formsSection">
+        <form method="post" action="#" target="_blank"> <!--O method define qual vai ser o metodo de receber os dados do usuario, essa é uma parte
+        importante da segurança do site, já que um argumento defasado para este atributo seria o "Get", que expõe os dados
+        cliente na url do site, sendo então não recomendado. No lugar de "get" method, é utilizado o "post".
+        Já em ACTION, definimos aode as informações serão armazenadas, quando se tem um BD vinculado, você vincula neste atributo.-->
+
+            <div class="containerImg">
+
+                <div id="imgContainer"></div>
+
+            </div>
+
+            <div class="container">
+
+                <div id="description">
+                    <h1>Carne de largato com legumes</h1>
+
+                    <p>Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Curabitur urna dolor, porta sed faucibus eu,
+                    viverra elementum sapien. Morbi ante arcu, pulvinar ut leo id, placerat iaculis ipsum.  </p>
+        
+                </div>
+
+
+            </div>
+
+            <div class="container">
+
+                <div id="valorBox">
+                    <p>A partir de R$ 28,90</p>
+
+                    <h2>Adicionais:</h2>
+    
+                </div>
+
+
+            </div>
+
+            <div class="container">
+
+                <div id="addBox">
+                    <h1>Escolha seus adicionais:</h1>
+                    <p>0 de 1</p>
+                </div>
+
+            </div>
+
+
+            <div class="container">
+
+                <nav onclick="mostrarBloco()" id="additions">
+                    <ul>
+                        <li>
+                            <a class="salada" href="#">Salada</a>
+                            <span>+ R$ 3,00</span>
+                            <ul class="addSecond">
+                                <li>
+                                    <span>
+                                        <input class="checkBox" type="checkbox">
+                                        <a href="#">Cebola</a>
+                                    </span> 
+
+                                </li>
+                                <li>
+                                    <span>
+                                        <input class="checkBox" type="checkbox">
+                                        <a href="#">Tomate</a>
+                                    </span> 
+                                </li>
+                                <li>
+                                    <span>
+                                        <input class="checkBox" type="checkbox">
+                                        <a href="#">Palmito</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <input class="checkBox" type="checkbox">
+                                        <a href="#">Salppicao</a>
+                                    </span> 
+                                </li>
+                                <li>
+                                    <span>
+                                        <input class="checkBox" type="checkbox">
+                                        <a href="#">Alface</a>
+                                    </span> 
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+    
+               <!-- <nav onclick="mostrarBloco()" id="additions">
+                    <ul>
+                        <li>
+                            <a class="salada" href="#">Refrigerante</a>
+                            <span>+ R$ 0,00</span>
+                            <ul class="addSecond">
+                                <li>
+                                    <span>
+                                        <input class="checkBox" type="checkbox">
+                                        <a href="#">Cebola</a>
+                                    </span> 
+
+                                </li>
+                                <li>
+                                    <span>
+                                        <input class="checkBox" type="checkbox">
+                                        <a href="#">Tomate</a>
+                                    </span> 
+                                </li>
+                                <li>
+                                    <span>
+                                        <input class="checkBox" type="checkbox">
+                                        <a href="#">Palmito</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <input class="checkBox" type="checkbox">
+                                        <a href="#">Salppicao</a>
+                                    </span> 
+                                </li>
+                                <li>
+                                    <span>
+                                        <input class="checkBox" type="checkbox">
+                                        <a href="#">Alface</a>
+                                    </span> 
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>-->
+
+
+            </div>
+
+            <!--<div class="container">
+
+                <nav id="payBox">
+
+                    <ol>
+                        <li>
+                            <h1>total: 31,90</h1>
+                        </li>
+                        <li>
+                            <h2>Valor padrão:</h1>
+                            <span>R$ 28,90</span>
+            
+                        </li>
+                        <li>
+                            <h2>Total Adicionais:</h1>
+                            <span>1 de 1</span>
+            
+                        </li>
+                    </ol>
+
+                    <br>
+
+
+
+                </nav>
+
+            </div>-->
+
+
+            <div class="container" id="buttonBox">
+                <button class="button">Pagamento</button>
+            </div>
+
+
+        </form>
+    </section>
+
+    <footer id="rodaPe">
+        <div id="boxFooter">
+            
+            <span>Thiago Pessoa &reg; </span>
+
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

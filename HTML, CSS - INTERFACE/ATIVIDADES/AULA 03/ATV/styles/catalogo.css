@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* {
+    font-family: 'Roboto Condensed', sans-serif;    
+    padding: 0px;
+    margin: 0px auto;
+    box-sizing: border-box;
+
+}
+
+.pratos, .supermercado {
+    background-color: #a3081a;
+    background-image: url('../assets/delivery.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    
+}
+
+#formsSection {
+    margin-top: 3em;
+    width: 600px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0.2em;
+    
+    border-radius: 0.2rem;
+} 
+
+.container {
+
+    width: 500px;
+    /*border: 1px solid red;*/
+    padding: 5px;
+    height: auto;
+    color: #222;
+
+}
+
+
+.containerImg {
+    margin-top: 1em;
+    width: 560px;
+    /*border: 1px solid red;*/
+    height: auto;
+    padding: 3px;
+}
+
+#imgContainer {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../assets/comida.jpg');
+    width: 100%;
+    height: 350px;
+    
+}
+
+#valorBox {
+    /*border: 1px solid yellow;*/
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+
+}
+
+#valorBox p {
+    font-size: 14px;
+}
+
+#valorBox h2 {
+    padding: 10px 0 15px 0;
+    font-size: 18px;
+}
+
+#description {
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+#description h1 {
+    font-size: 23px;
+    padding: 0 0 8px 0;
+    margin: 0;
+
+}
+
+
+#description p{
+    font-size: 16px;
+    padding-bottom: 20px;
+    
+}
+
+#addBox {
+    /*border: 1px solid red;*/
+    background-color: #edededd6;
+    color: #545454;
+    padding: 5px 0 5px 0;
+    padding: 10px;
+}
+
+#addBox h1 {
+    font-size: 23px;
+    padding-bottom: 5px;
+}
+
+
+
+button {
+    background-color: rgb(40, 155, 98);
+    color: #eee;
+    /* display: block; Ele preencher a largura toda */
+    /* width: 100%; Deixar o botão bem grande */
+    border: 1px solid #222; /*borda escura em volta do input*/ 
+    border-radius: 5px;
+    padding: 1em;
+    margin: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0.5em auto; 
+
+
+}
+
+#buttonBox {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.headContainer {
+    background-color: none;
+    
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 20px;
+    margin: 0;
+}
+
+.headContainer h1 {
+    color: white;
+    padding: 5px;
+}
+
+#rodaPe{
+    margin-top: 20em;
+    width: 100%;
+    height: auto;
+    background-color: #111;
+    text-align: center;
+}
+
+#rodaPe div {
+    padding: 30px;
+    color: #ffffff;
+}
+
+#additions {
+    border-bottom: 1px solid #ccc;
+    line-height: 30px;
+    display: block;
+    padding-left: 10px;
+
+}
+
+#additions ul a {
+    color: #111;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+
+
+#additions ul span {
+    font-size: 14.5px;
+    color:#545454;
+}
+
+.checkBox {
+    margin-right: 20px;
+}
+
+
+#additions ul li {
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+
+
+}
+
+#additions ul {
+    list-style: none;
+
+}
+
+#additions ul ul li a {
+    font-size: 14px;
+
+}
+
+#additions .addSecond {
+    display: none;
+}
+
+#additions ul .addSecond.mostra {
+    display: block;
+}
+
+
+.addSecond li:hover{
+    background-color: #edededd6;
+    transition: 0.5s;
+}
+
+.addSecond {
+    padding-left: 2.5em;
+}
+
+.boxBlack {
+    width: 100%;
+    height: 59px;
+    border-bottom: 1px solid #ccc;
+
+}
+
+#payBox {
+    background-color: #edededd6;
+    color: #545454;
+    padding: 5px 0 5px 0;
+    padding: 10px;
+}
+
+#payBox h2 {
+    font-size: 18px;
+}
+
+
+/**************** Cabeçalho *****************/
+
+#topo {
+    width: 50%;
+    padding: 25px;
+    height: auto;
+    
+}
+
+#topo h1 {
+    text-rendering: optimizeLegibility;
+    font-weight: normal;
+    border-bottom: 1px solid #ccc;
+    color: #fff;
+}
+
+#cabeçalho {
+    
+    margin: 0 auto;
+}
+
+#navBar {
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    padding-top: 10px;
+    padding: 15px;
+    flex-wrap: nowrap;
+    max-width: 700px;
+    
+}
+
+#listNav {
+    padding: 10px;
+}
+
+#listNav li {
+    display: inline;
+
+    padding: 1px;
+    
+}
+
+#listNav li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 16px;
+    font-weight: 550;
+    display: inline-block;
+
+}
+
+#listNav li:hover {
+    padding: 10px;
+    border-bottom:5px solid rgba(252, 185, 0, 1);
+    font-size: 28px;
+    background-color: #ffffff2a;
+    transition: background .5s;
+}
+
+
+.logo {
+    padding: 0;
+    height: auto;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+
+}
+
+.logoHead {
+    width: 150px;
+    height: auto;
+    display: block;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.logoHead  img{
+    cursor: pointer;
+}
+
+.logoHead img:hover{
+    background-color: #ffffff2a;
+    transition: background .5s;
+
+}
+
+
+.login {
+    text-align: center;
+    width: 150px;
+    cursor: pointer;
+
+}
+
+.login h1 {
+    text-rendering: optimizeLegibility;
+    font-weight: normal;
+
+    font-size: 1em;
+    border-radius: 2rem;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px;
+}
+
+
+.login h1:hover {
+    background-color: #ffffff2a;
+    transition: background .5s;
+
+}
+
+
+/*********** NAVEGAÇÃO ************/
+
+
+body.pratos #listNav li.delivery, 
+body.supermercado #listNav li.super{
+    border-bottom:5px solid rgba(252, 185, 0, 1);
+    background-color: #ffffff2a;
+    transition: background .5s;
+    font-size: 28px;
+    padding: 10px;
+
+}
