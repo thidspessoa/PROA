@@ -108,7 +108,7 @@
 
 
 button {
-    background-color: rgb(40, 155, 98);
+    background-color:  #db0d25;
     color: #eee;
     /* display: block; Ele preencher a largura toda */
     /* width: 100%; Deixar o botão bem grande */
@@ -117,8 +117,10 @@ button {
     padding: 1em;
     margin: 10px;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 0;
     margin: 0.5em auto; 
+    width: 90%;
+    font-size: 18px;
 
 
 }
@@ -169,7 +171,7 @@ button {
 #additions {
     border-bottom: 1px solid #ccc;
     line-height: 30px;
-    display: block;
+    /* display: block; */
     padding-left: 10px;
 
 }
@@ -213,11 +215,6 @@ button {
     display: none;
 }
 
-#additions ul .addSecond.mostra {
-    display: block;
-}
-
-
 .addSecond li:hover{
     background-color: #edededd6;
     transition: 0.5s;
@@ -234,16 +231,77 @@ button {
 
 }
 
+
+/*------------------------------  Parte de TOTAL DA COMPRA    ---------------------------------- */
+
 #payBox {
-    background-color: #edededd6;
-    color: #545454;
-    padding: 5px 0 5px 0;
-    padding: 10px;
+    /* color: #fff; */
+    line-height: 25px;
+    /* padding-left: 10px; */
+    /* height: auto; */
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 1px solid black;
+    /* background-color: #edededd6; */
+    /* padding: 10px; */ 
 }
+
+#payBox .secondListBuy {
+    display: none;
+}
+
+#payBox ul {
+    list-style: none;
+}
+
+.secondListBuy li {
+    /* line-height: 30px; */
+    display: block;
+}
+
+/* .secondListBuy span {
+    border: 1px solid yellow;
+    width: auto;
+    padding: 0;
+} */
 
 #payBox h2 {
     font-size: 18px;
 }
+
+.secondListBuy {
+    color: #111;
+    background-color: #edededd6;
+
+    /* display: flex;
+    align-items: center;
+    gap: 10px; */
+    width: auto;
+    padding: 10px;
+}
+
+.secondListBuy li {
+    display: flex;
+    align-items: center;
+    color: #545454;
+    gap: 58%;
+}
+.secondListBuy li:first-child {
+    gap: 70%;
+    color:#222;
+    font-weight: 600;
+}
+
+.secondListBuy li:last-child{
+    gap: 75.5%;
+    color:#222;
+    font-weight: 600;
+}
+
+.secondListBuy h1, span {
+    margin: 0;
+}
+
 
 
 /**************** Cabeçalho *****************/
