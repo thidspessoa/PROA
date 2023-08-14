@@ -1,0 +1,54 @@
+/* Query serve para ajustarmos nosso site para que ele possa cobrir o máximo de usuários possiveis,
+de diferentes dispositivos. Basicamente aplica a responsividade a nossa aplicação. */
+
+/* Media: é a tag a qual especificamos um tamanho minimo e um tamanho maximo para nossas
+aplicações. E onde, em cada caso, definimos como o estilo irá se comportar.  */
+
+
+h2 {
+    color: red;
+}
+
+
+@media (min-width: 768px) {
+    h1 {
+        border: 1px solid red;
+        font-size: 28px;
+    }
+}
+
+
+
+
+
+
+/* 
+
+Também podemos utilizar o media colocando o maximo e o minimo no mesmo seletor:
+
+@media (min-width: 768px) and (max-width: 979px) {
+    h1 {
+        border: 1px solid red;
+        font-size: 28px;
+    }    
+} 
+
+*/
+
+
+/*
+
+É preciso usar a meta tag informando que os layouts devem iniciar com 100% do tamanho
+viewport
+
+*/
+
+
+/*
+O bom de trabalhar com youtube para hospedar videos, é que não precisa deixalos no seu servidor, somente usar o link
+de commpartilhamento,. O maps também é assim
+
+
+Para deixar videos responsivos, usamos o IFRAME tag
+
+*/
