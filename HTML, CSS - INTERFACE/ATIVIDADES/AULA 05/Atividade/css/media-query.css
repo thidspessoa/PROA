@@ -1,0 +1,98 @@
+@charset "UTF-8"; 
+
+/* Typical Device BreakPoints
+------------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+
+/*TABLET*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: linear-gradient(to top, #034C8C, #2C87BF );
+    }
+    
+    section#login {
+        width: 90vw;
+        display: flex; /*Alinha as caixas lado a lado*/
+    }
+
+    section#login > div#image {
+        display: flex;
+        width: 30%;
+        height: 100%;
+    }
+
+    section#login > div#forms {
+        flex-direction: row;
+        width: 70%;
+    }
+
+    div#forms > form {
+        margin-top: 80px;
+    }
+
+    header > h1 {
+        font-size: 2em;
+        margin-bottom: 10px;
+        
+    }
+
+    header > p {
+        font-size: 1em;
+        padding-bottom: 50px;
+        color: #034C8C;
+        border-bottom: 2px solid #ccc;
+    }
+}
+
+
+/*DESKTOP*/
+@media screen and (min-width: 992px) {
+    body {
+        background-image: linear-gradient(to top, #034C8C, #2C87BF );
+    }
+    section#login {
+        width: 950px;
+        display: flex; 
+    }
+
+    section#login > div#image {
+        display: flex;
+        order: 2;
+        width: 50%;
+        height: 100%;
+    }
+
+    section#login > div#forms {
+        flex-direction: row;
+        order: 1;
+        width: 50%;
+    }
+
+    div#forms > header {
+        padding: 20px;
+    }
+
+    div#forms > form {
+        margin-top: 30px;
+    }
+
+    header > h1 {
+        font-size: 2em;
+        margin-bottom: 10px;
+        
+    }
+
+    header > p {
+        font-size: 1em;
+        padding-bottom: 50px;
+        color: #034C8C;
+        border-bottom: 2px solid #ccc;
+    }
+
+}

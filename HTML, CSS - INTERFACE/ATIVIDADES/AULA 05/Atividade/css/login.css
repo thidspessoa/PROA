@@ -1,0 +1,147 @@
+@charset "UTF-8"; /*Compatibilidade com caracteres.*/
+
+
+/*
+    PALETA DE CORES:
+
+    VERDE: #83A603
+    AZUL-CLARO: #2C87BF 
+    BRANCO: #F3F2F0
+    AZUL-ESCURO: #034C8C
+    AMARELO: #F2CB05
+
+*/
+
+
+* {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; /*Que a borda faça parte da conta de largura*/
+}
+
+
+body, html {
+    background-color: #034C8C;
+    height: 100vh; /*Faz com que o body e o html tenham 100% do tamanho da tela*/
+    width: 100vw;
+}
+
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/********* Parte de login ***************/
+
+section#login {
+    background-color: #F3F2F0;
+    width: 250px;
+    height: 500px; /*Altura e largura na tela de celular*/
+    border-radius: 15px;
+    overflow: hidden; /* Esconde a rebarba da imagem que sai do container*/
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.500);
+}
+
+section#login > div#image {
+    display: block;
+    background: #034C8C url("../assets/images/travel.jpg") no-repeat;
+    background-size: cover;
+    background-position: left center ;
+    height: 200px;
+
+    transition: widht .3s, height .3s; /*Altera de tamanho de maniera maissuave*/
+    transition-timing-function: ease; /*Suaviza a animação, não acelelra e desacelera na mesma velocidade*/
+
+}
+
+section#login > div#forms {
+    display: block;
+    text-align: center;
+    /* padding: 10px; */
+
+}
+
+
+header > h1 {
+    margin-top: 10px;
+    text-align: center;
+    color: #F2CB05;
+    font-style: italic;
+}
+
+header > p {
+    font-size: 0.8em;
+    margin: 10px 0 10px 0;
+    padding-bottom: 10px;
+    color: #222;
+    border-bottom: 1px solid #bfc3c6;
+}
+
+
+div#alias {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    gap: none;
+
+}
+
+div#alias > a {
+    text-decoration: none;
+    font-size: .7em;
+    color: #2C87BF;
+    font-weight: none;
+}
+
+div#alias a:hover {
+    text-decoration: underline;
+}
+
+div#forms > form {
+    display: flex;
+    height: auto;
+    align-items: center;
+    margin-top:10px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inputCamp {
+    width: 80%;
+    height:40px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #bfc3c6;
+    color: #222;
+    font-weight: 0;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    font-weight: none;
+    width: 80%;
+    height: 40px;
+    background-color: #F2CB05;
+    color: #034C8C;
+    cursor: pointer;
+    border: 1px solid #cfad07;
+    border-radius: 5px;
+}
+
+form > input[type=submit]:hover {
+    background-color:#d7b408;
+    transition: 0.5s;
+} 
+
+
