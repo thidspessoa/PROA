@@ -1,26 +1,16 @@
-const temperaturaCelsius = parseFloat(prompt("Digite a temperatura em Celsius: "))
-const unidade = prompt("Para qual unidade de temperatura você quer converter \n A) Fahrenheit \n B) Kelvin")
+const temperaturaCelsius = parseFloat(prompt("Digite a temperatura em Celsius: "));
+const unidade = prompt("Para qual unidade de temperatura você quer converter:\nA) Fahrenheit\nB) Kelvin");
 
-
-
-// KELVIN = TEMPERATURACELSIUS + 273,15 (kelvin)
-
-
-
-
-
-
-
-
-
-function conveterTemperatura (temperaturaBase, unidade) {
-
-    if (unidade == 'Fa') 
-        
-
-    //converterF = (temperaturaBase * 9/5) + 32
-    console.log(`${temperaturaBase}º Graus Celsius \n quando convertido para Fahrenheit são: ${converterF}º Graus Fahrenheit's `)
+function converterTemperatura(temperaturaBase, unidade) {
+    if (unidade == 'A' || unidade == 'a') {
+        return (temperaturaBase * 9/5) + 32;
+    } else if (unidade == 'B' || unidade == 'b') {
+        return temperaturaBase + 273.15;
+    } else {
+        return "Unidade de temperatura inválida";
+    }
 }
 
+const resultado = converterTemperatura(temperaturaCelsius, unidade);
 
-conveterTemperatura(temperaturaCelsius)
+console.log(`O valor convertido é: ${resultado}`);
